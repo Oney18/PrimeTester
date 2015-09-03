@@ -15,7 +15,7 @@ public class PrimeTester {
      */
     public static boolean isPrime(long n) {
         for(long i = n-1; i > 1; i--){
-            if(n % n == 0){
+            if(n % i == 0 || n == 0 || n == 1){
                 return false;
             }
         }
